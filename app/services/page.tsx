@@ -49,8 +49,8 @@ export default function ServicesPage() {
     <>
       {/* HERO – STRONG, RICH EMERALD GRADIENT (no more weak light green) */}
       <section className="relative py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-emerald-400 via-emerald-300 to-emerald-500" />
-        <div className="absolute inset-0 bg-gradient-to-tl from-emerald-400/20 via-transparent to-emerald-600/20" />
+        <div className="absolute inset-0 bg-linear-to-br from-teal-950 via-black to-teal-950" />
+        <div className="absolute inset-0 bg-linear-to-br from-teal-950/20 via-transparent to-teal-950/20" />
         <div className="absolute inset-0 bg-black/50" />
 
         <div className="relative container mx-auto px-6 text-center z-10">

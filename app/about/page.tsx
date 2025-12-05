@@ -17,7 +17,7 @@ export default function AboutPage() {
     <>
       {/* HERO – STRONG & OBVIOUS EMERALD linear */}
       <section className="relative py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-linear-to-br from-emerald-400 via-emerald-300 to-emerald-500" />
+        <div className="absolute inset-0 bg-linear-to-br from-teal-950 via-black to-teal-950" />
         <div className="absolute inset-0 bg-linear-to-tl from-emerald-400/20 via-transparent to-emerald-600/20" />
         <div className="absolute inset-0 bg-black/50" />
 

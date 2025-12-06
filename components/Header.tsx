@@ -13,28 +13,28 @@ export default function Header() {
     <motion.header
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
-      <div className="container mx-auto flex h-16 items-center justify-between px-6">
+      className="sticky top-0 z-50 border-b border-violet-900 bg-black/95 backdrop-blur">
+      <div className="container mx-auto flex h-20 items-center justify-between px-6">
         <Link href="/" className="flex items-center gap-3">
-          <div className="relative w-10 h-10">
+          <div className="relative w-11 h-11">
             <Image
               src="/logo.png"
-              alt="INTEGER"
+              alt="LYNX"
               fill
               className="object-contain"
             />
           </div>
-          <span className="text-2xl font-light tracking-widest text-sky-500 hidden sm:block">
-            INTEGER
+          <span className="text-2xl font-bold text-violet-400 hidden sm:block tracking-wider">
+            LYNX
           </span>
         </Link>
 
-        <nav className="hidden md:flex gap-8">
+        <nav className="hidden md:flex items-center gap-10">
           {navItems.map((item) => (
             <Link
               key={item}
               href={item === "Home" ? "/" : `/${item.toLowerCase()}`}
-              className="text-slate-600 hover:text-blue-600 font-light transition">
+              className="text-gray-300 hover:text-violet-400 transition font-medium">
               {item}
             </Link>
           ))}
@@ -43,16 +43,16 @@ export default function Header() {
         <Sheet>
           <SheetTrigger asChild className="md:hidden">
             <Button variant="ghost" size="icon">
-              <Menu className="h-5 w-5" />
+              <Menu className="h-6 w-6 text-white" />
             </Button>
           </SheetTrigger>
-          <SheetContent className="bg-white">
-            <nav className="flex flex-col gap-6 mt-8">
+          <SheetContent className="bg-black border-violet-900">
+            <nav className="flex flex-col gap-8 mt-10">
               {navItems.map((item) => (
                 <Link
                   key={item}
                   href={item === "Home" ? "/" : `/${item.toLowerCase()}`}
-                  className="text-lg font-light hover:text-blue-600">
+                  className="text-xl font-medium text-gray-300 hover:text-violet-400 transition">
                   {item}
                 </Link>
               ))}

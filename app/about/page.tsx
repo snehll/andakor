@@ -15,49 +15,46 @@ export const metadata = { title: "About Us" };
 export default function AboutPage() {
   return (
     <>
-      {/* HERO – STRONG & OBVIOUS blue linear */}
+      {/* HERO — DEEP VIOLET GRADIENT */}
       <section className="relative py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-linear-to-br from-blue-950 via-black to-blue-950" />
-        {/* <div className="absolute inset-0 bg-linear-to-tl from-blue-400/20 via-transparent to-blue-600/20" />
-        <div className="absolute inset-0 bg-white/50" /> */}
+        <div className="absolute inset-0 bg-gradient-to-br from-violet-950 via-black to-purple-950" />
+        <div className="absolute inset-0 bg-gradient-to-tl from-violet-600/20 via-transparent to-purple-600/20" />
+        <div className="absolute inset-0 bg-black/60" />
 
         <div className="relative container mx-auto px-6 text-center z-10">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 drop-shadow-2xl">
             About Us
           </h1>
-          <p className="text-xl md:text-2xl text-white/95 max-w-4xl mx-auto font-light leading-relaxed drop-shadow-lg">
-            Based in Estonia, our company combines digital expertise with
-            industrial trade experience. We help businesses source and deliver
-            equipment across Europe and Asia, providing reliable,
-            well-documented, and transparent trade operations. With a focus on
-            compliance and efficiency, we make cross-border transactions simple
-            and secure.
+          <p className="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto font-light leading-relaxed drop-shadow-lg">
+            Operating from Estonia, we manage procurement and export of
+            industrial products, spare parts, and raw materials. Our company
+            bridges suppliers and buyers through efficient, transparent, and
+            secure trade operations.
           </p>
         </div>
       </section>
 
-      {/* MAIN CONTENT – CLEAN WHITE + blue ACCENTS */}
-      <section className="py-24 bg-white">
+      {/* MAIN CONTENT — DARK THEME */}
+      <section className="py-24 bg-zinc-950">
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Text */}
             <AnimatedSection>
-              <h2 className="text-4xl font-bold text-blue-700 mb-8">
+              <h2 className="text-4xl font-bold text-violet-400 mb-8">
                 We Make Global Trade Seamless
               </h2>
-              <div className="prose prose-lg text-slate-700 space-y-6">
+              <div className="prose prose-lg text-gray-300 space-y-6">
                 <p>
-                  Each deal is handled by a dedicated team that ensures every
-                  delivery is on time, every document correct, and every client
-                  informed.
+                  We speak the language of both technology and logistics —
+                  ensuring precision and predictability for every client.
                 </p>
-                <p className="text-slate-900 font-medium text-lg">
+                <p className="text-white font-medium text-lg">
                   From single spare part orders to complete turbine overhauls —
                   we handle complexity so you don’t have to.
                 </p>
               </div>
 
-              {/* Stats – blue numbers */}
+              {/* Stats — Electric purple */}
               <div className="grid grid-cols-3 gap-8 mt-12">
                 {[
                   { label: "Years Active", value: "15+" },
@@ -65,16 +62,16 @@ export default function AboutPage() {
                   { label: "Partners", value: "200+" },
                 ].map((stat) => (
                   <div key={stat.label} className="text-center">
-                    <div className="text-5xl font-bold text-blue-600">
+                    <div className="text-5xl font-bold text-violet-400">
                       {stat.value}
                     </div>
-                    <div className="text-slate-600 mt-2">{stat.label}</div>
+                    <div className="text-gray-400 mt-2">{stat.label}</div>
                   </div>
                 ))}
               </div>
             </AnimatedSection>
 
-            {/* Feature Cards – blue linears */}
+            {/* Feature Cards — Violet glow */}
             <div className="grid grid-cols-2 gap-6">
               {[
                 { icon: Globe, title: "Europe & Asia Focus" },
@@ -83,11 +80,11 @@ export default function AboutPage() {
                 { icon: ShieldCheck, title: "100% Compliance" },
               ].map((item, i) => (
                 <AnimatedSection key={i}>
-                  <Card className="p-8 text-center hover:scale-105 transition-transform duration-300 border border-blue-100 hover:border-blue-300 hover:shadow-xl">
-                    <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-linear-to-br from-blue-600 to-blue-700 p-4 shadow-lg">
+                  <Card className="p-8 text-center hover:scale-105 transition-transform duration-300 bg-zinc-900 border border-violet-900/50 hover:border-violet-500 hover:shadow-2xl hover:shadow-violet-600/30">
+                    <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-violet-600 to-purple-600 p-4 shadow-xl">
                       <item.icon className="w-full h-full text-white" />
                     </div>
-                    <h3 className="font-semibold text-lg text-slate-900">
+                    <h3 className="font-semibold text-lg text-white">
                       {item.title}
                     </h3>
                   </Card>
@@ -98,12 +95,12 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* OUR PROMISE – blue section */}
-      <section className="py-20 bg-linear-to-br from-blue-50 to-white">
+      {/* OUR PROMISE — Dark violet section */}
+      <section className="py-20 bg-gradient-to-b from-zinc-950 to-black">
         <div className="container mx-auto px-6">
           <AnimatedSection>
             <div className="text-center max-w-4xl mx-auto">
-              <h2 className="text-4xl font-bold text-blue-700 mb-10">
+              <h2 className="text-4xl font-bold text-violet-400 mb-10">
                 Our Promise
               </h2>
               <div className="grid md:grid-cols-3 gap-10">
@@ -126,12 +123,12 @@ export default function AboutPage() {
                 ].map((promise) => (
                   <div
                     key={promise.title}
-                    className="flex flex-col items-center bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow">
-                    <promise.icon className="w-16 h-16 text-blue-600 mb-4" />
-                    <h3 className="text-xl font-semibold text-slate-900 mb-2">
+                    className="flex flex-col items-center bg-zinc-900 p-10 rounded-2xl border border-violet-900/50 hover:border-violet-500 hover:shadow-2xl hover:shadow-violet-600/40 transition-all">
+                    <promise.icon className="w-16 h-16 text-violet-400 mb-4" />
+                    <h3 className="text-xl font-semibold text-white mb-2">
                       {promise.title}
                     </h3>
-                    <p className="text-slate-600">{promise.desc}</p>
+                    <p className="text-gray-400">{promise.desc}</p>
                   </div>
                 ))}
               </div>

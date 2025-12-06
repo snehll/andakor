@@ -1,4 +1,3 @@
-// src/app/layout.tsx
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -9,25 +8,22 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: {
-    default: "INTEGER | Estonia Industrial Trade",
-    template: "%s | INTEGER",
-  },
+  title: { default: "LYNX | Estonia Industrial Trade", template: "%s | LYNX" },
   description:
-    "Estonia’s digital gateway for industrial trade — fast, transparent, and technologically precise.",
+    "From Estonia we support international trade with a balance of technological efficiency and reliable coordination.",
   openGraph: {
-    title: "INTEGER WW FZ-LLC",
+    title: "LYNX GLOBAL FZ-LLC",
     description:
-      "Estonia’s position in Northern Europe allows us to support international trade with speed and technological precision.",
-    url: "https://integer.ae",
-    siteName: "INTEGER",
-    images: ["/og-integer.jpg"],
-    emails: ["mail@integer.ae"],
+      "Efficient trade starts with clear communication, reliable partners, and transparent logistics.",
+    url: "https://lynxglobal.ae",
+    siteName: "LYNX",
+    images: ["/og-lynx.jpg"],
+    emails: ["hello@lynxglobal.ae"],
   },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0ea5e9", // Sky blue — Nordic tech feel
+  themeColor: "#7c3aed",
 };
 
 export default function RootLayout({
@@ -37,8 +33,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${inter.className} bg-white text-slate-900 antialiased`}>
+      <body className={`${inter.className} bg-black text-white`}>
         <Header />
         <main>{children}</main>
         <Footer />

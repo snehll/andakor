@@ -10,24 +10,24 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "LEBRE | Efficient Industrial Trade",
-    template: "%s | LEBRE",
+    default: "INTEGER | Estonia Industrial Trade",
+    template: "%s | INTEGER",
   },
   description:
-    "Trabzon & Warsaw — coordinating seamless industrial trade across Europe and beyond.",
+    "Estonia’s digital gateway for industrial trade — fast, transparent, and technologically precise.",
   openGraph: {
-    title: "LEBRE TİCARET LİMİTED ŞİRKETİ",
+    title: "INTEGER WW FZ-LLC",
     description:
-      "Efficient trade starts with clear communication, reliable partners, and transparent logistics.",
-    url: "https://lebre.com.tr",
-    siteName: "LEBRE",
-    images: ["/og-lebre.jpg"],
-    emails: ["ofis@lebre.com.tr"],
+      "Estonia’s position in Northern Europe allows us to support international trade with speed and technological precision.",
+    url: "https://integer.ae",
+    siteName: "INTEGER",
+    images: ["/og-integer.jpg"],
+    emails: ["mail@integer.ae"],
   },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0d9488", // Deep teal
+  themeColor: "#0ea5e9", // Sky blue — Nordic tech feel
 };
 
 export default function RootLayout({

@@ -33,7 +33,7 @@ export default function ProductCategories() {
                     <div className="h-full w-full bg-linear-to-br from-primary/80 via-primary to-primary/60" />
                   )}
                   {/* Dark overlay for text readability */}
-                  <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition" />
+                  <div className="absolute inset-0 bg-white/50 group-hover:bg-white/60 transition" />
                 </div>
 
                 {/* Text Overlay – Bottom */}

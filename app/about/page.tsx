@@ -15,33 +15,34 @@ export const metadata = { title: "About Us" };
 export default function AboutPage() {
   return (
     <>
-      {/* HERO – STRONG & OBVIOUS EMERALD linear */}
+      {/* HERO – STRONG & OBVIOUS blue linear */}
       <section className="relative py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-linear-to-br from-teal-950 via-black to-teal-950" />
-        <div className="absolute inset-0 bg-linear-to-tl from-emerald-400/20 via-transparent to-emerald-600/20" />
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-linear-to-br from-blue-950 via-black to-blue-950" />
+        {/* <div className="absolute inset-0 bg-linear-to-tl from-blue-400/20 via-transparent to-blue-600/20" />
+        <div className="absolute inset-0 bg-white/50" /> */}
 
         <div className="relative container mx-auto px-6 text-center z-10">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 drop-shadow-2xl">
             About Us
           </h1>
           <p className="text-xl md:text-2xl text-white/95 max-w-4xl mx-auto font-light leading-relaxed drop-shadow-lg">
-            We work with industrial producers and distributors across Europe,
-            providing professional trade management for international projects.
-            From negotiating supplier terms to coordinating multimodal
-            transport, we handle every detail so our clients can focus on their
-            business goals.
+            Based in Estonia, our company combines digital expertise with
+            industrial trade experience. We help businesses source and deliver
+            equipment across Europe and Asia, providing reliable,
+            well-documented, and transparent trade operations. With a focus on
+            compliance and efficiency, we make cross-border transactions simple
+            and secure.
           </p>
         </div>
       </section>
 
-      {/* MAIN CONTENT – CLEAN WHITE + EMERALD ACCENTS */}
+      {/* MAIN CONTENT – CLEAN WHITE + blue ACCENTS */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Text */}
             <AnimatedSection>
-              <h2 className="text-4xl font-bold text-emerald-700 mb-8">
+              <h2 className="text-4xl font-bold text-blue-700 mb-8">
                 We Make Global Trade Seamless
               </h2>
               <div className="prose prose-lg text-slate-700 space-y-6">
@@ -56,7 +57,7 @@ export default function AboutPage() {
                 </p>
               </div>
 
-              {/* Stats – Emerald numbers */}
+              {/* Stats – blue numbers */}
               <div className="grid grid-cols-3 gap-8 mt-12">
                 {[
                   { label: "Years Active", value: "15+" },
@@ -64,7 +65,7 @@ export default function AboutPage() {
                   { label: "Partners", value: "200+" },
                 ].map((stat) => (
                   <div key={stat.label} className="text-center">
-                    <div className="text-5xl font-bold text-emerald-600">
+                    <div className="text-5xl font-bold text-blue-600">
                       {stat.value}
                     </div>
                     <div className="text-slate-600 mt-2">{stat.label}</div>
@@ -73,7 +74,7 @@ export default function AboutPage() {
               </div>
             </AnimatedSection>
 
-            {/* Feature Cards – Emerald linears */}
+            {/* Feature Cards – blue linears */}
             <div className="grid grid-cols-2 gap-6">
               {[
                 { icon: Globe, title: "Europe & Asia Focus" },
@@ -82,8 +83,8 @@ export default function AboutPage() {
                 { icon: ShieldCheck, title: "100% Compliance" },
               ].map((item, i) => (
                 <AnimatedSection key={i}>
-                  <Card className="p-8 text-center hover:scale-105 transition-transform duration-300 border border-emerald-100 hover:border-emerald-300 hover:shadow-xl">
-                    <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-linear-to-br from-emerald-600 to-emerald-700 p-4 shadow-lg">
+                  <Card className="p-8 text-center hover:scale-105 transition-transform duration-300 border border-blue-100 hover:border-blue-300 hover:shadow-xl">
+                    <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-linear-to-br from-blue-600 to-blue-700 p-4 shadow-lg">
                       <item.icon className="w-full h-full text-white" />
                     </div>
                     <h3 className="font-semibold text-lg text-slate-900">
@@ -97,12 +98,12 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* OUR PROMISE – Emerald section */}
-      <section className="py-20 bg-linear-to-br from-emerald-50 to-white">
+      {/* OUR PROMISE – blue section */}
+      <section className="py-20 bg-linear-to-br from-blue-50 to-white">
         <div className="container mx-auto px-6">
           <AnimatedSection>
             <div className="text-center max-w-4xl mx-auto">
-              <h2 className="text-4xl font-bold text-emerald-700 mb-10">
+              <h2 className="text-4xl font-bold text-blue-700 mb-10">
                 Our Promise
               </h2>
               <div className="grid md:grid-cols-3 gap-10">
@@ -126,7 +127,7 @@ export default function AboutPage() {
                   <div
                     key={promise.title}
                     className="flex flex-col items-center bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow">
-                    <promise.icon className="w-16 h-16 text-emerald-600 mb-4" />
+                    <promise.icon className="w-16 h-16 text-blue-600 mb-4" />
                     <h3 className="text-xl font-semibold text-slate-900 mb-2">
                       {promise.title}
                     </h3>

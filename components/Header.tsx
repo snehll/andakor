@@ -18,14 +18,14 @@ export default function Header() {
         <Link href="/" className="flex items-center gap-3">
           <div className="relative w-10 h-10">
             <Image
-              src="/logo-lebre.png"
-              alt="LEBRE"
+              src="/logo.png"
+              alt="INTEGER"
               fill
               className="object-contain"
             />
           </div>
-          <span className="text-2xl font-bold text-teal-400 hidden sm:block">
-            LEBRE
+          <span className="text-2xl font-light tracking-widest text-sky-500 hidden sm:block">
+            INTEGER
           </span>
         </Link>
 
@@ -34,7 +34,7 @@ export default function Header() {
             <Link
               key={item}
               href={item === "Home" ? "/" : `/${item.toLowerCase()}`}
-              className="text-slate-600 hover:text-emerald-600 font-light transition">
+              className="text-slate-600 hover:text-blue-600 font-light transition">
               {item}
             </Link>
           ))}
@@ -52,7 +52,7 @@ export default function Header() {
                 <Link
                   key={item}
                   href={item === "Home" ? "/" : `/${item.toLowerCase()}`}
-                  className="text-lg font-light hover:text-emerald-600">
+                  className="text-lg font-light hover:text-blue-600">
                   {item}
                 </Link>
               ))}

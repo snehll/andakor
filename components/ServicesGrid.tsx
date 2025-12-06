@@ -64,17 +64,17 @@ export default function ServicesGrid() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, i) => (
             <AnimatedSection key={i}>
-              <Card className="h-full border border-teal-900/50 bg-zinc-900/95 hover:border-teal-500 hover:shadow-2xl hover:shadow-teal-500/20 transition-all duration-500">
+              <Card className="h-full border border-sky-100 bg-white hover:shadow-2xl hover:border-sky-300 transition-all duration-500">
                 <CardHeader>
-                  <div className="w-14 h-14 rounded-full bg-linear-to-br from-teal-600 to-teal-700 flex items-center justify-center mb-4">
+                  <div className="w-14 h-14 rounded-full bg-linear-to-br from-sky-500 to-blue-600 flex items-center justify-center mb-4">
                     <service.icon className="w-8 h-8 text-white" />
                   </div>
-                  <CardTitle className="text-2xl text-teal-400">
+                  <CardTitle className="text-2xl text-sky-700">
                     {service.title}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-300 text-lg">{service.desc}</p>
+                  <p className="text-slate-600 text-lg">{service.desc}</p>
                 </CardContent>
               </Card>
             </AnimatedSection>

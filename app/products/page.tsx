@@ -8,7 +8,7 @@ export default function ProductsPage() {
   return (
     <>
       <section className="relative py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-linear-to-br from-violet-900 via-black to-purple-900" />
+        <div className="absolute inset-0 bg-linear-to-br from-teal-950 via-black to-teal-950" />
         <div className="absolute inset-0 bg-black/70" />
         <div className="relative container mx-auto px-6 text-center z-10">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-2xl">
@@ -21,7 +21,7 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      <section className="py-24 bg-zinc-950">
+      <section className="py-24 bg-black">
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
             {categories.map((cat, i) => (
@@ -34,9 +34,9 @@ export default function ProductsPage() {
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                   ) : (
-                    <div className="h-full bg-linear-to-br from-violet-800 via-purple-800 to-violet-900" />
+                    <div className="h-full bg-linear-to-br from-teal-800 via-amber-800 to-teal-900" />
                   )}
-                  <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/30 to-transparent" />
+                  <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/40 to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-10 text-white z-10">
                     <h3 className="text-4xl font-bold mb-3 drop-shadow-2xl">
                       {cat.title}

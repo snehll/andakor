@@ -1,4 +1,3 @@
-// src/components/ServicesGrid.tsx
 "use client";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Plane, Truck, Ship, Globe, Package, Warehouse } from "lucide-react";
@@ -33,44 +32,41 @@ const services = [
   {
     icon: Warehouse,
     title: "Full Turnkey Logistics",
-    desc: "Procurement, storage, customs clearance, and final delivery",
+    desc: "Procurement, custom clearance, and final delivery",
   },
 ];
 
 export default function ServicesGrid() {
   return (
-    <section className="py-24 bg-zinc-950">
+    <section className="py-24 bg-black">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-violet-400 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-teal-500 mb-4">
             Comprehensive Logistics & Supply Services
           </h2>
           <p className="text-xl text-gray-300 max-w-4xl mx-auto">
             Every service is built around{" "}
-            <strong className="text-violet-300">
+            <strong className="text-teal-400">
               precision, documentation accuracy, and reliable timing
             </strong>
-            . From single spare part to full turbine overhaul — we handle it
-            all.
+            .
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, i) => (
             <AnimatedSection key={i}>
-              <Card className="h-full border border-violet-900/50 bg-zinc-900/95 hover:border-violet-500 hover:shadow-2xl hover:shadow-violet-600/30 transition-all duration-500 backdrop-blur-sm">
+              <Card className="h-full border border-teal-900/50 bg-zinc-900/95 hover:border-teal-500 hover:shadow-2xl hover:shadow-teal-600/30 transition-all duration-500">
                 <CardHeader>
-                  <div className="w-14 h-14 rounded-full bg-linear-to-br from-violet-600 to-purple-600 flex items-center justify-center mb-4 shadow-xl">
-                    <service.icon className="w-8 h-8 text-white" />
+                  <div className="w-14 h-14 rounded-full bg-linear-to-br from-teal-600 to-amber-600 flex items-center justify-center mb-4">
+                    <service.icon className="w-8 h-8 text-black" />
                   </div>
-                  <CardTitle className="text-2xl text-violet-400">
+                  <CardTitle className="text-2xl text-teal-400">
                     {service.title}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-300 text-lg leading-relaxed">
-                    {service.desc}
-                  </p>
+                  <p className="text-gray-300 text-lg">{service.desc}</p>
                 </CardContent>
               </Card>
             </AnimatedSection>

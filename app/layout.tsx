@@ -8,22 +8,24 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: { default: "LYNX | Estonia Industrial Trade", template: "%s | LYNX" },
+  title: {
+    default: "ANDAKOR | UAE Industrial Trade",
+    template: "%s | ANDAKOR",
+  },
   description:
-    "From Estonia we support international trade with a balance of technological efficiency and reliable coordination.",
+    "From the United Arab Emirates we support international trade across regions where speed, reliability and clear coordination are essential.",
   openGraph: {
-    title: "LYNX GLOBAL FZ-LLC",
+    title: "ANDAKOR GROUP OÜ",
     description:
-      "Efficient trade starts with clear communication, reliable partners, and transparent logistics.",
-    url: "https://lynxglobal.ae",
-    siteName: "LYNX",
-    images: ["/og-lynx.jpg"],
-    emails: ["hello@lynxglobal.ae"],
+      "Positioned at a major global crossroads, our operations connect manufacturers and industrial buyers worldwide.",
+    url: "https://andakor.ee",
+    siteName: "ANDAKOR",
+    images: ["/og-andakor.jpg"],
+    emails: ["inbox@andakor.ee"],
   },
 };
-
 export const viewport: Viewport = {
-  themeColor: "#7c3aed",
+  themeColor: "#0d9488", // Deep teal — no orange
 };
 
 export default function RootLayout({
@@ -33,7 +35,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.className} bg-black text-white`}>
+      <body className={`${inter.className} bg-black text-white antialiased`}>
         <Header />
         <main>{children}</main>
         <Footer />

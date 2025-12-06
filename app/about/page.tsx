@@ -15,10 +15,10 @@ export const metadata = { title: "About Us" };
 export default function AboutPage() {
   return (
     <>
-      {/* HERO — DEEP VIOLET GRADIENT */}
+      {/* HERO — RICH DEEP TEAL linear */}
       <section className="relative py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-violet-950 via-black to-purple-950" />
-        <div className="absolute inset-0 bg-gradient-to-tl from-violet-600/20 via-transparent to-purple-600/20" />
+        <div className="absolute inset-0 bg-linear-to-br from-teal-950 via-black to-teal-950" />
+        <div className="absolute inset-0 bg-linear-to-tl from-teal-600/20 via-transparent to-teal-700/20" />
         <div className="absolute inset-0 bg-black/60" />
 
         <div className="relative container mx-auto px-6 text-center z-10">
@@ -26,27 +26,29 @@ export default function AboutPage() {
             About Us
           </h1>
           <p className="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto font-light leading-relaxed drop-shadow-lg">
-            Operating from Estonia, we manage procurement and export of
-            industrial products, spare parts, and raw materials. Our company
-            bridges suppliers and buyers through efficient, transparent, and
-            secure trade operations.
+            Headquartered in the UAE, we facilitate international trade and
+            wholesale brokerage across Europe, the Middle East, and Asia. Acting
+            as both a trading company and an intermediary, we coordinate deals,
+            secure supply chains, and ensure smooth delivery of goods worldwide.
           </p>
         </div>
       </section>
 
-      {/* MAIN CONTENT — DARK THEME */}
+      {/* MAIN CONTENT — DARK TEAL THEME */}
       <section className="py-24 bg-zinc-950">
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Text */}
             <AnimatedSection>
-              <h2 className="text-4xl font-bold text-violet-400 mb-8">
+              <h2 className="text-4xl font-bold text-teal-400 mb-8">
                 We Make Global Trade Seamless
               </h2>
               <div className="prose prose-lg text-gray-300 space-y-6">
                 <p>
-                  We speak the language of both technology and logistics —
-                  ensuring precision and predictability for every client.
+                  Positioned at a major global crossroads, our operations
+                  connect manufacturers, distributors and industrial buyers
+                  through supply routes designed for consistency and strong
+                  commercial results.
                 </p>
                 <p className="text-white font-medium text-lg">
                   From single spare part orders to complete turbine overhauls —
@@ -54,7 +56,7 @@ export default function AboutPage() {
                 </p>
               </div>
 
-              {/* Stats — Electric purple */}
+              {/* Stats — Teal numbers */}
               <div className="grid grid-cols-3 gap-8 mt-12">
                 {[
                   { label: "Years Active", value: "15+" },
@@ -62,7 +64,7 @@ export default function AboutPage() {
                   { label: "Partners", value: "200+" },
                 ].map((stat) => (
                   <div key={stat.label} className="text-center">
-                    <div className="text-5xl font-bold text-violet-400">
+                    <div className="text-5xl font-bold text-teal-400">
                       {stat.value}
                     </div>
                     <div className="text-gray-400 mt-2">{stat.label}</div>
@@ -71,7 +73,7 @@ export default function AboutPage() {
               </div>
             </AnimatedSection>
 
-            {/* Feature Cards — Violet glow */}
+            {/* Feature Cards — Teal glow */}
             <div className="grid grid-cols-2 gap-6">
               {[
                 { icon: Globe, title: "Europe & Asia Focus" },
@@ -80,8 +82,8 @@ export default function AboutPage() {
                 { icon: ShieldCheck, title: "100% Compliance" },
               ].map((item, i) => (
                 <AnimatedSection key={i}>
-                  <Card className="p-8 text-center hover:scale-105 transition-transform duration-300 bg-zinc-900 border border-violet-900/50 hover:border-violet-500 hover:shadow-2xl hover:shadow-violet-600/30">
-                    <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-violet-600 to-purple-600 p-4 shadow-xl">
+                  <Card className="p-8 text-center hover:scale-105 transition-transform duration-300 bg-zinc-900 border border-teal-900/50 hover:border-teal-500 hover:shadow-2xl hover:shadow-teal-600/30">
+                    <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-linear-to-br from-teal-600 to-teal-700 p-4 shadow-xl">
                       <item.icon className="w-full h-full text-white" />
                     </div>
                     <h3 className="font-semibold text-lg text-white">
@@ -95,12 +97,12 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* OUR PROMISE — Dark violet section */}
-      <section className="py-20 bg-gradient-to-b from-zinc-950 to-black">
+      {/* OUR PROMISE — Deep teal section */}
+      <section className="py-20 bg-linear-to-b from-zinc-950 to-black">
         <div className="container mx-auto px-6">
           <AnimatedSection>
             <div className="text-center max-w-4xl mx-auto">
-              <h2 className="text-4xl font-bold text-violet-400 mb-10">
+              <h2 className="text-4xl font-bold text-teal-400 mb-10">
                 Our Promise
               </h2>
               <div className="grid md:grid-cols-3 gap-10">
@@ -123,8 +125,8 @@ export default function AboutPage() {
                 ].map((promise) => (
                   <div
                     key={promise.title}
-                    className="flex flex-col items-center bg-zinc-900 p-10 rounded-2xl border border-violet-900/50 hover:border-violet-500 hover:shadow-2xl hover:shadow-violet-600/40 transition-all">
-                    <promise.icon className="w-16 h-16 text-violet-400 mb-4" />
+                    className="flex flex-col items-center bg-zinc-900 p-10 rounded-2xl border border-teal-900/50 hover:border-teal-500 hover:shadow-2xl hover:shadow-teal-600/40 transition-all">
+                    <promise.icon className="w-16 h-16 text-teal-400 mb-4" />
                     <h3 className="text-xl font-semibold text-white mb-2">
                       {promise.title}
                     </h3>

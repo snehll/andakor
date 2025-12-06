@@ -6,47 +6,42 @@ export default function ContactPage() {
   return (
     <>
       <section className="relative py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-linear-to-br from-violet-900 via-black to-purple-900" />
+        <div className="absolute inset-0 bg-linear-to-br from-teal-950 via-black to-teal-950" />
         <div className="absolute inset-0 bg-black/70" />
         <div className="relative container mx-auto px-6 text-center z-10">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-2xl">
             Let’s Work Together
           </h1>
           <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto drop-shadow">
-            Tell us what you need — spare part, full project, or logistics
-            support.
-            <br />
             We reply within 4 hours.
           </p>
         </div>
       </section>
 
-      <section className="py-24 bg-zinc-950">
+      <section className="py-24 bg-black">
         <div className="container mx-auto px-6 max-w-5xl">
           <div className="grid lg:grid-cols-2 gap-16">
             <div>
-              <h2 className="text-4xl font-bold text-violet-400 mb-8">
+              <h2 className="text-4xl font-bold text-teal-500 mb-8">
                 Get in Touch
               </h2>
               <ContactForm />
             </div>
             <div className="space-y-8">
               <div>
-                <h3 className="text-2xl font-semibold text-violet-400 mb-4">
-                  LYNX GLOBAL FZ-LLC
+                <h3 className="text-2xl font-semibold text-teal-500 mb-4">
+                  ANDAKOR GROUP OÜ
                 </h3>
                 <p className="text-gray-300 leading-relaxed">
-                  FDBC1866 Compass Building, Al Shohada Road
+                  Harju maakond, Tallinn, Kesklinna linnaosa
                   <br />
-                  AL Hamra Industrial Zone-FZ
+                  Roosikrantsi tn 2, 10119
                   <br />
-                  Ras Al Khaimah, United Arab Emirates
-                  <br />
-                  Email: hello@lynxglobal.ae
+                  Email: inbox@andakor.ee
                 </p>
               </div>
               <div>
-                <h3 className="text-2xl font-semibold text-violet-400 mb-4">
+                <h3 className="text-2xl font-semibold text-teal-500 mb-4">
                   Response Time
                 </h3>
                 <p className="text-xl text-gray-300">

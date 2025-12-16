@@ -26,7 +26,7 @@ export default function AboutPage() {
             About Us
           </h1>
           <p className="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto font-light leading-relaxed drop-shadow-lg">
-            Headquartered in the UAE, we facilitate international trade and
+            Headquartered in the Estonia, we facilitate international trade and
             wholesale brokerage across Europe, the Middle East, and Asia. Acting
             as both a trading company and an intermediary, we coordinate deals,
             secure supply chains, and ensure smooth delivery of goods worldwide.

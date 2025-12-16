@@ -60,7 +60,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/terms"
+                  href="/term-of-use"
                   className="text-gray-400 hover:text-teal-400">
                   Terms of Service
                 </Link>

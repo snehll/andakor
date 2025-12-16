@@ -24,7 +24,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}>
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 leading-tight drop-shadow-2xl">
-            From the United Arab Emirates
+            From the Estonia
             <br />
             <span className="text-transparent bg-clip-text bg-linear-to-r from-teal-400 to-cyan-400">
               we support international trade

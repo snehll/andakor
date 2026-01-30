@@ -5,7 +5,7 @@ export default function UserAgreement() {
   return (
     <article className="py-24 bg-background">
       <div className="container mx-auto px-6 max-w-4xl">
-        <h1 className="text-5xl font-bold mb-8">User Agreement</h1>
+        <h1 className="text-5xl font-bold mb-8 text-black">User Agreement</h1>
         <p className="text-muted-foreground mb-8">
           Last updated on December 01, 2025
         </p>
@@ -14,7 +14,7 @@ export default function UserAgreement() {
           <h2>1. GENERAL CONDITIONS</h2>
           <p>
             1.1. This User Agreement (‘Agreement’) applies to the website
-            available <strong>___________</strong> (hereinafter referred to as
+            available <strong>https://andakor.ee</strong> (hereinafter referred to as
             the "Website").
           </p>
           <p>
@@ -53,7 +53,7 @@ export default function UserAgreement() {
             </li>
             <li>
               2.1.2. "User" means any person who has accepted the offer{" "}
-              <strong>___________</strong>.
+              <strong>https://andakor.ee</strong>.
             </li>
             <li>
               2.1.3. "Content" means the intellectual property of the Website

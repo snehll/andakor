@@ -10,9 +10,7 @@ export default function Footer() {
             <p className="text-gray-400 text-sm leading-relaxed">
               ANDAKOR GROUP OÜ
               <br />
-              Harju maakond, Tallinn, Kesklinna linnaosa
-              <br />
-              Roosikrantsi tn 2, 10119
+              Harju maakond, Tallinn, Lasnamäe linnaosa, Valukoja tn 8/2, 1141
             </p>
           </div>
           <div>
@@ -63,6 +61,13 @@ export default function Footer() {
                   href="/term-of-use"
                   className="text-gray-400 hover:text-teal-400">
                   Terms of Service
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/cookies-policy"
+                  className="text-gray-400 hover:text-teal-400">
+                  Cookies Policy
                 </Link>
               </li>
             </ul>

@@ -7,7 +7,7 @@ export default function PrivacyPolicy() {
       <div className="container mx-auto px-6 max-w-4xl">
         <h1 className="text-5xl font-bold mb-8 text-black">Privacy Policy</h1>
         <p className="text-muted-foreground mb-8">
-          Last updated on December 16, 2025
+          Last updated on December 01, 2025
         </p>
 
         <div className="prose prose-lg dark:prose-invert space-y-8 text-muted-foreground">

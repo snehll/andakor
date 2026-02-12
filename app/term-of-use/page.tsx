@@ -1,19 +1,19 @@
-// src/app/terms-of-use/page.tsx  (or user-agreement/page.tsx – adjust the filename as needed)
+// src/app/term-of-use/page.tsx
 export const metadata = { title: "User Agreement" };
 
 export default function UserAgreement() {
   return (
     <article className="py-24 bg-background">
       <div className="container mx-auto px-6 max-w-4xl">
-        <h1 className="text-5xl font-bold mb-8 text-black">User Agreement</h1>
+        <h1 className="text-5xl font-bold mb-8 text-black">USER AGREEMENT</h1>
         <p className="text-muted-foreground mb-8">
           Last updated on December 01, 2025
         </p>
 
         <div className="prose prose-lg dark:prose-invert space-y-8 text-muted-foreground">
-          <h2>1. GENERAL CONDITIONS</h2>
+          <h2>GENERAL CONDITIONS</h2>
           <p>
-            1.1. This User Agreement (‘Agreement’) applies to the website
+            1.1. This User Agreement ('Agreement') applies to the website
             available <strong>https://andakor.ee</strong> (hereinafter referred to as
             the "Website").
           </p>
@@ -44,7 +44,7 @@ export default function UserAgreement() {
             in this Agreement, and the User agrees to comply with these terms.
           </p>
 
-          <h2>2. TERMS AND DEFINITIONS</h2>
+          <h2>TERMS AND DEFINITIONS</h2>
           <p>2.1. The following terms are used in this Agreement:</p>
           <ul>
             <li>
@@ -75,7 +75,7 @@ export default function UserAgreement() {
             shall not affect interpretation.
           </p>
 
-          <h2>3. SUBJECT OF THE AGREEMENT</h2>
+          <h2>SUBJECT OF THE AGREEMENT</h2>
           <p>
             3.1. This Agreement governs access to the information contained on
             the Website and services provided to the User.
@@ -99,7 +99,7 @@ export default function UserAgreement() {
             legislation of the Republic of Estonia.
           </p>
 
-          <h2>4. RIGHTS AND OBLIGATIONS OF THE PARTIES</h2>
+          <h2>RIGHTS AND OBLIGATIONS OF THE PARTIES</h2>
           <p>4.1. The User has the right to:</p>
           <ul>
             <li>
@@ -171,10 +171,10 @@ export default function UserAgreement() {
               systems;
             </li>
             <li>
-              4.3.10. Not track or attempt to track other Users’ information;
+              4.3.10. Not track or attempt to track other Users' information;
             </li>
             <li>
-              4.3.11. Not bypass the Website’s navigation structure to obtain
+              4.3.11. Not bypass the Website's navigation structure to obtain
               information or materials not provided by the Website's services.
             </li>
           </ul>
@@ -184,7 +184,7 @@ export default function UserAgreement() {
             except when impossible due to reasons beyond its control.
           </p>
 
-          <h2>5. USING THE WEBSITE</h2>
+          <h2>USING THE WEBSITE</h2>
           <p>
             5.1. The Website and its Content are owned and managed by the
             Website Administration.
@@ -211,7 +211,7 @@ export default function UserAgreement() {
             and services at any time without notifying Users.
           </p>
 
-          <h2>6. LIABILITY</h2>
+          <h2>LIABILITY</h2>
           <p>
             6.1. The Administration is not liable for any losses incurred by the
             User due to intentional or negligent violations of this Agreement.
@@ -229,7 +229,7 @@ export default function UserAgreement() {
             </li>
           </ul>
 
-          <h2>7. VIOLATIONS</h2>
+          <h2>VIOLATIONS</h2>
           <p>
             7.1. The Administration may disclose User information as required or
             permitted under Estonian law.
@@ -254,14 +254,14 @@ export default function UserAgreement() {
             Agreement.
           </p>
 
-          <h2>8. GOVERNING LAW AND DISPUTES</h2>
+          <h2>GOVERNING LAW AND DISPUTES</h2>
           <p>
             8.1. This Agreement is governed by the laws of the Republic of
             Estonia. All disputes arising from or related to this Agreement
             shall be resolved in the courts of the Republic of Estonia.
           </p>
 
-          <h2>9. CHANGES TO THIS AGREEMENT</h2>
+          <h2>CHANGES TO THIS AGREEMENT</h2>
           <p>
             9.1. Any changes to this Agreement will be published on this page
             and, if appropriate, notified to Users by email.

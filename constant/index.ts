@@ -29,4 +29,29 @@ export const categories = [
     brands: "Siemens • ABB • Honeywell",
     img: "https://images.squarespace-cdn.com/content/v1/5d27703ef624330001984515/ea5834d3-2825-4eb2-9af9-0fd304e34586/pexels-%D0%B0%D0%BB%D0%B5%D0%BA%D0%BA%D0%B5-%D0%B1%D0%BB%D0%B0%D0%B6%D0%B8%D0%BD-8140124.jpg?format=2500w",
   },
+  {
+    title: "Adaptive Mixer",
+    brands: "High-Efficiency Mixing Solutions",
+    img: "/adaptivemixer.webp",
+  },
+  {
+    title: "Hydro Ejectors",
+    brands: "Advanced Fluid Dynamics",
+    img: "/hydro-ejectors.webp",
+  },
+  {
+    title: "Jet Mixers",
+    brands: "Precision Injection Systems",
+    img: "/jet-mixers.webp",
+  },
+  {
+    title: "Mixing Accessories",
+    brands: "Universal Spare Parts & Add-ons",
+    img: "/mixing-accessories.webp",
+  },
+  {
+    title: "Single Speed Mixer",
+    brands: "Reliable Industrial Performance",
+    img: "/single-speed-mixer.webp",
+  },
 ];
